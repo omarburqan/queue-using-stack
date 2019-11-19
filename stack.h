@@ -15,7 +15,7 @@ class Stack{
 	    //int peek(); 
 		bool isEmpty();
 		void print();
-		
+		bool hasSpace();
 	private:
 	
 		size_t m_capacity;

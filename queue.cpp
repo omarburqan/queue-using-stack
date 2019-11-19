@@ -10,9 +10,13 @@ Queue::~Queue(){
 }
 bool Queue::enQueue(int x){
 
+	if ( !m_stack1->hasSpace()){
+		std::cout << "not enough space in Queue" << std::endl;
+		return false;
+	}
 	while (!m_stack1->isEmpty())
-	    m_stack2->push(m_stack1->pop()); 
-	     
+	  	m_stack2->push(m_stack1->pop()); 
+	  	   
 	m_stack1->push(x);
 	
 	while (!m_stack2->isEmpty())
@@ -21,7 +25,7 @@ bool Queue::enQueue(int x){
 	return true;
 }
 int Queue::deQueue(){
-    if (m_stack1->isEmpty()) { 
+    if ((m_stack1->isEmpty())) { 
         std::cout << "Queue is Empty "; 
        	return 0; 
     }  

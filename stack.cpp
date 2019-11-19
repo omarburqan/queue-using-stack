@@ -32,8 +32,11 @@ int Stack::peek(){
 	return m_arr[m_index - 1];
 }
 */
+bool Stack::hasSpace(){
+	return (m_capacity-m_index != 0);
+}
 bool Stack::isEmpty(){
-	return m_index == 0;
+	return (m_index == 0);
 }
 void Stack::print(){
 	for (size_t i = 0;i<m_index;++i){

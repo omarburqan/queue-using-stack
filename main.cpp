@@ -34,10 +34,16 @@ void test_Queue(){
     q.enQueue(1); 
     q.enQueue(2); 
     q.enQueue(3); 
+    q.enQueue(4); 
+    q.enQueue(5);
+    q.enQueue(6); 
   	q.print();
-    cout << q.deQueue() << '\n'; 
-    cout << q.deQueue() << '\n'; 
-    cout << q.deQueue() << '\n'; 
+    cout << q.deQueue() << " deQueue from Queue\n"; 
+    cout << q.deQueue() << " deQueue from Queue\n"; 
+    cout << q.deQueue() << " deQueue from Queue\n"; 
+    cout << q.deQueue() << " deQueue from Queue\n"; 
+    cout << q.deQueue() << " deQueue from Queue\n"; 
+    cout << q.deQueue() << " deQueue from Queue\n"; 
   	
 	cout << "\nEND TESTING QUEUE\n" << endl;
 	
